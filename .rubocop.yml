@@ -1,7 +1,10 @@
-require: rubocop-rspec
+require:
+  - rubocop-rails
+  - rubocop-rspec
 
 AllCops:
   TargetRubyVersion: 2.6
+  NewCops: enable
   Exclude:
     - vendor/**/*
     - config/**/*
@@ -38,9 +41,5 @@ Naming/PredicateName:
 # Because it couples tested code with that module
 RSpec/VerifiedDoubles:
   Enabled: false
-RSpec/DescribeClass:
-  Exclude:
-    - 'spec/dependencies_spec.rb'
-    - 'spec/features/**/*'
 RSpec/DescribeMethod:
   Enabled: false
