@@ -8,6 +8,10 @@ gem 'sqlite3', '~> 1.4.2'
 gem 'puma', '~> 5.5.2'
 gem 'rest-client', '~> 2.1.0'
 
+group :development, :test do
+  gem 'awesome_print', '~> 1.9.2'
+end
+
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'rubocop', '~> 1.25.0', require: false
@@ -18,5 +22,6 @@ group :development do
 end
 
 group :test do
+  gem 'rspec_api_documentation', github: 'zipmark/rspec_api_documentation'
   gem 'rspec-rails', '~> 3.6.0'
 end

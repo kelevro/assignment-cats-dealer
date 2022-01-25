@@ -12,15 +12,6 @@ AllCops:
     - bin/**/*
     - tmp/**/*
 
-Layout/LineLength:
-  Max: 95
-Layout/SpaceInsideHashLiteralBraces:
-  EnforcedStyle: no_space
-
-Metrics/BlockLength:
-  Enabled: true
-  Max: 200
-
 Style/MultilineBlockChain:
   Enabled: false
 Style/Documentation:
@@ -43,3 +34,6 @@ RSpec/VerifiedDoubles:
   Enabled: false
 RSpec/DescribeMethod:
   Enabled: false
+RSpec/ExampleLength:
+  Exclude:
+    - spec/acceptance/**/*
