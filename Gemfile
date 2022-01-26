@@ -5,11 +5,14 @@ ruby '2.6.6'
 gem 'rails', '~> 5.2'
 gem 'sqlite3', '~> 1.4.2'
 
+gem 'oj', '~> 3.13.11'
+gem 'ox', '~> 2.14.6'
 gem 'puma', '~> 5.5.2'
 gem 'rest-client', '~> 2.1.0'
 
 group :development, :test do
   gem 'awesome_print', '~> 1.9.2'
+  gem 'dotenv-rails', '~> 2.7.6'
 end
 
 group :development do

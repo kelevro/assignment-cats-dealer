@@ -19,6 +19,16 @@ Style/Documentation:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+Layout/IndentationConsistency:
+  EnforcedStyle: indented_internal_methods
+
+Metrics/MethodLength:
+  Exclude:
+    - spec/**/*
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+
 Naming/PredicateName:
   NamePrefix:
     - is_
@@ -35,5 +45,4 @@ RSpec/VerifiedDoubles:
 RSpec/DescribeMethod:
   Enabled: false
 RSpec/ExampleLength:
-  Exclude:
-    - spec/acceptance/**/*
+  Enabled: false
